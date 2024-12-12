@@ -10,7 +10,7 @@
 		9B1B1F552D09C11F005EC428 /* SeasonalAppIconApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1B1F542D09C11F005EC428 /* SeasonalAppIconApp.swift */; };
 		9B1B1F572D09C11F005EC428 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1B1F562D09C11F005EC428 /* ContentView.swift */; };
 		9B1B1F5D2D09C11F005EC428 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B1B1F5C2D09C11F005EC428 /* Preview Assets.xcassets */; };
-		9BEB2AA02D0B283D00DA9E99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B1B1F582D09C11F005EC428 /* Assets.xcassets */; };
+		9BEB2AA12D0B28B600DA9E99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B1B1F582D09C11F005EC428 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,7 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BEB2AA02D0B283D00DA9E99 /* Assets.xcassets in Resources */,
+				9BEB2AA12D0B28B600DA9E99 /* Assets.xcassets in Resources */,
 				9B1B1F5D2D09C11F005EC428 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
