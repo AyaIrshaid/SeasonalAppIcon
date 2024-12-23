@@ -10,10 +10,30 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Button {
+                SeasonalAppIcon.changeAppIcon(appIcon: .winter)
+            } label: {
+                Text("Winter")
+            }
+            .padding()
+            Button {
+                SeasonalAppIcon.changeAppIcon(appIcon: .autumn)
+            } label: {
+                Text("Autumn")
+            }
+            .padding()
+            Button {
+                SeasonalAppIcon.changeAppIcon(appIcon: .summer)
+            } label: {
+                Text("Summer")
+            }
+            .padding()
+            Button {
+                SeasonalAppIcon.changeAppIcon(appIcon: .spring)
+            } label: {
+                Text("Spring")
+            }
+            .padding()
         }
         .padding()
     }
