@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B073F3B2D186090004B7696 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B1B1F582D09C11F005EC428 /* Assets.xcassets */; };
 		9B1B1F552D09C11F005EC428 /* SeasonalAppIconApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1B1F542D09C11F005EC428 /* SeasonalAppIconApp.swift */; };
 		9B1B1F572D09C11F005EC428 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1B1F562D09C11F005EC428 /* ContentView.swift */; };
 		9B1B1F5D2D09C11F005EC428 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B1B1F5C2D09C11F005EC428 /* Preview Assets.xcassets */; };
-		9BEB2AA12D0B28B600DA9E99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B1B1F582D09C11F005EC428 /* Assets.xcassets */; };
+		9B7E404B2D196CDA008E8493 /* OccasionalAppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7E404A2D196CDA008E8493 /* OccasionalAppIcon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		9B1B1F582D09C11F005EC428 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B1B1F5A2D09C11F005EC428 /* SeasonalAppIcon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SeasonalAppIcon.entitlements; sourceTree = "<group>"; };
 		9B1B1F5C2D09C11F005EC428 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9B7E404A2D196CDA008E8493 /* OccasionalAppIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OccasionalAppIcon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				9B1B1F542D09C11F005EC428 /* SeasonalAppIconApp.swift */,
 				9B1B1F562D09C11F005EC428 /* ContentView.swift */,
+				9B7E404A2D196CDA008E8493 /* OccasionalAppIcon.swift */,
 				9B1B1F582D09C11F005EC428 /* Assets.xcassets */,
 				9B1B1F5A2D09C11F005EC428 /* SeasonalAppIcon.entitlements */,
 				9B1B1F5B2D09C11F005EC428 /* Preview Content */,
@@ -127,7 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BEB2AA12D0B28B600DA9E99 /* Assets.xcassets in Resources */,
+				9B073F3B2D186090004B7696 /* Assets.xcassets in Resources */,
 				9B1B1F5D2D09C11F005EC428 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B7E404B2D196CDA008E8493 /* OccasionalAppIcon.swift in Sources */,
 				9B1B1F572D09C11F005EC428 /* ContentView.swift in Sources */,
 				9B1B1F552D09C11F005EC428 /* SeasonalAppIconApp.swift in Sources */,
 			);
@@ -266,7 +270,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = SeasonalAppIcon/SeasonalAppIcon.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -304,7 +308,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = SeasonalAppIcon/SeasonalAppIcon.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
