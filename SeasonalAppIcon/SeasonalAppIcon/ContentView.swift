@@ -9,33 +9,46 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Button {
-                SeasonalAppIcon.changeAppIcon(appIcon: .winter)
-            } label: {
-                Text("Winter")
+        VStack (alignment: .leading, spacing: 24.0) {
+            HStack {
+                Image("winter")
+                    .frame(width: 40.0, height: 40.0)
+                Button {
+                    SeasonalAppIcon.changeAppIcon(appIcon: .winter)
+                } label: {
+                    Text("Winter")
+                }
             }
-            .padding()
-            Button {
-                SeasonalAppIcon.changeAppIcon(appIcon: .autumn)
-            } label: {
-                Text("Autumn")
+            HStack {
+                Image("autumn")
+                    .frame(width: 40.0, height: 40.0)
+                    .clipShape(RoundedRectangle(cornerRadius: 10.0))
+                Button {
+                    SeasonalAppIcon.changeAppIcon(appIcon: .autumn)
+                } label: {
+                    Text("Autumn")
+                }
             }
-            .padding()
-            Button {
-                SeasonalAppIcon.changeAppIcon(appIcon: .summer)
-            } label: {
-                Text("Summer")
+            HStack {
+                Image("summer")
+                    .frame(width: 40.0, height: 40.0)
+                Button {
+                    SeasonalAppIcon.changeAppIcon(appIcon: .summer)
+                } label: {
+                    Text("Summer")
+                }
             }
-            .padding()
-            Button {
-                SeasonalAppIcon.changeAppIcon(appIcon: .spring)
-            } label: {
-                Text("Spring")
+            HStack {
+                Image("spring")
+                    .frame(width: 40.0, height: 40.0)
+                    .clipShape(RoundedRectangle(cornerRadius: 10.0))
+                Button {
+                    SeasonalAppIcon.changeAppIcon(appIcon: .spring)
+                } label: {
+                    Text("Spring")
+                }
             }
-            .padding()
         }
-        .padding()
     }
 }
 
