@@ -12,41 +12,45 @@ struct ContentView: View {
         VStack (alignment: .leading, spacing: 24.0) {
             HStack {
                 Image("winter")
-                    .frame(width: 40.0, height: 40.0)
-                Button {
-                    SeasonalAppIcon.changeAppIcon(appIcon: .winter)
-                } label: {
-                    Text("Winter")
-                }
+                    .frame(width: 60.0, height: 60.0)
+                Text("Winter")
+                    .foregroundStyle(.cyan)
+                    .fontWeight(.bold)
             }
-            HStack {
-                Image("autumn")
-                    .frame(width: 40.0, height: 40.0)
-                    .clipShape(RoundedRectangle(cornerRadius: 10.0))
-                Button {
-                    SeasonalAppIcon.changeAppIcon(appIcon: .autumn)
-                } label: {
-                    Text("Autumn")
-                }
-            }
-            HStack {
-                Image("summer")
-                    .frame(width: 40.0, height: 40.0)
-                Button {
-                    SeasonalAppIcon.changeAppIcon(appIcon: .summer)
-                } label: {
-                    Text("Summer")
-                }
+            .onTapGesture {
+                SeasonalAppIcon.changeAppIcon(appIcon: .winter)
             }
             HStack {
                 Image("spring")
-                    .frame(width: 40.0, height: 40.0)
+                    .frame(width: 60.0, height: 60.0)
                     .clipShape(RoundedRectangle(cornerRadius: 10.0))
-                Button {
-                    SeasonalAppIcon.changeAppIcon(appIcon: .spring)
-                } label: {
-                    Text("Spring")
-                }
+                Text("Spring")
+                    .foregroundStyle(.pink)
+                    .fontWeight(.bold)
+            }
+            .onTapGesture {
+                SeasonalAppIcon.changeAppIcon(appIcon: .spring)
+            }
+            HStack {
+                Image("summer")
+                    .frame(width: 60.0, height: 60.0)
+                Text("Summer")
+                    .foregroundStyle(.green)
+                    .fontWeight(.bold)
+            }
+            .onTapGesture {
+                SeasonalAppIcon.changeAppIcon(appIcon: .summer)
+            }
+            HStack {
+                Image("autumn")
+                    .frame(width: 60.0, height: 60.0)
+                    .clipShape(RoundedRectangle(cornerRadius: 10.0))
+                Text("Autumn")
+                    .foregroundStyle(.orange)
+                    .fontWeight(.bold)
+            }
+            .onTapGesture {
+                SeasonalAppIcon.changeAppIcon(appIcon: .autumn)
             }
         }
     }
