@@ -29,7 +29,7 @@ struct SeasonalAppIcon {
     static func changeAppIconWithoutPopUpMessage(appIcon: Occasions) {
         if UIApplication.shared.responds(to: #selector(getter: UIApplication.shared.supportsAlternateIcons)) && UIApplication.shared.supportsAlternateIcons {
             
-            typealias setalternativeIconName = @convention(c) (NSObject, Selector, NSString, @escaping (NSError) -> ()) -> ()
+            typealias setalternativeIconName = @convention(c) (NSObject, Selector, NSString?, @escaping (NSError) -> ()) -> ()
             
             let selectorString = "_setAlternateIconName:completeionHandler:"
             let currentIcon = UIApplication.shared.alternateIconName
@@ -42,7 +42,7 @@ struct SeasonalAppIcon {
             let imp = UIApplication.shared.method(for: selecter)
             
             let method = unsafeBitCast(imp, to: setalternativeIconName.self)
-            method(UIApplication.shared, selecter, appIcon.rawValue as NSString, { _ in})
+            method(UIApplication.shared, selecter, (appIcon == .spring ? nil : appIcon.rawValue as NSString), { _ in})
         }
     }
 }
